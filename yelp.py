@@ -11,7 +11,7 @@ def get_businesses( city ):
 
     # 2. 🆘✨ use the dotenv file to find the correct variable for Yelp!
     # We need to use our key! Look in the .env file for the Yelp key name
-    headers = { "Authorization": "Bearer " + config.YELP_AUTH_TOKEN}
+    headers = { "Authorization": "Bearer " + config.YELP_AUTH_TOKEN }
     params = {"location": city, "limit": 5, "term": "seafood"}
 
     # 💡the Request() method calls an external URL from our Python server
